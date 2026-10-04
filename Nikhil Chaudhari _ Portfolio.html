@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nikhil Chaudhari | Web Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EDF0F4; --ink:#14213D; --muted:#4F5B73; --card:#FFFFFF; --line:#CBD2DE; --accent:#B4531A; --accent-ink:#FFFFFF;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--bg:#0F1626;--ink:#E8ECF4;--muted:#9AA6BD;--card:#18213A;--line:#2C3756;--accent:#F0A25E;--accent-ink:#0F1626}
+}
+:root[data-theme="dark"]{--bg:#0F1626;--ink:#E8ECF4;--muted:#9AA6BD;--card:#18213A;--line:#2C3756;--accent:#F0A25E;--accent-ink:#0F1626}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",system-ui,sans-serif;font-size:17px;line-height:1.6}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",system-ui,sans-serif;margin:0;line-height:1.05}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;gap:16px;flex-wrap:wrap}
+nav .brand{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;text-decoration:none}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+nav a{text-decoration:none;color:var(--muted)}
+nav a:hover{color:var(--ink)}
+.hero{padding:56px 0 72px}
+.hero h1{font-weight:800;font-size:clamp(3.2rem,11vw,8rem);letter-spacing:-.04em}
+.hero h1 span{display:block}
+.hero h1 .second{color:transparent;-webkit-text-stroke:2px var(--ink)}
+.hero p{max-width:34em;font-size:1.2rem;color:var(--muted);margin:28px 0 32px}
+.btns{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 22px;border-radius:8px;font-weight:500;text-decoration:none;border:2px solid var(--ink)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:hover{transform:translateY(-2px)}
+.btn{transition:transform .15s}
+section{padding:64px 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:28px}
+.about{display:grid;grid-template-columns:2fr 1fr;gap:40px;align-items:start}
+.about p{margin:0 0 1em;max-width:40em}
+.cgpa{background:var(--ink);color:var(--bg);border-radius:14px;padding:26px}
+.cgpa b{font-family:"Bricolage Grotesque",sans-serif;font-size:3.6rem;display:block;line-height:1}
+.cgpa small{font-size:.95rem;opacity:.85}
+.skills{display:flex;flex-wrap:wrap;gap:12px;list-style:none;padding:0;margin:0}
+.skills li{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:10px 20px;font-weight:500}
+.skills li.learning{border-style:dashed;border-color:var(--accent);color:var(--accent)}
+.projects{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.project{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:26px;display:flex;flex-direction:column;gap:10px}
+.project:nth-child(1){border-top:6px solid var(--accent)}
+.project:nth-child(2){border-top:6px solid var(--ink)}
+.project:nth-child(3){border-top:6px solid var(--muted)}
+.project h3{font-size:1.5rem}
+.project p{margin:0;color:var(--muted)}
+.project span{margin-top:auto;padding-top:10px;font-size:.9rem;color:var(--muted)}
+.contact p{max-width:34em;color:var(--muted);margin:0 0 24px}
+footer{padding:32px 0;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
+@media (max-width:720px){.about{grid-template-columns:1fr}nav ul{gap:16px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav aria-label="Main">
+    <a class="brand" href="#top">Nikhil Chaudhari</a>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="top">
+    <h1><span>Nikhil</span><span class="second">Chaudhari</span></h1>
+    <p>Third-year student who builds web applications, designs databases, and enjoys solving problems with code.</p>
+    <div class="btns">
+      <a class="btn primary" href="#projects">See my projects</a>
+      <a class="btn" href="https://github.com/nikhilchaudhari976" target="_blank" rel="noopener">GitHub profile</a>
+    </div>
+  </header>
+</div>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About me</h2>
+    <div class="about">
+      <div>
+        <p>I'm a third-year student with a strong interest in web development and database management. I like turning an everyday need into a working application, from a hotel's bookings to a personal task list.</p>
+        <p>I'm currently learning data structures and algorithms to sharpen my problem solving, and I enjoy working with people as much as with code: leading teams and explaining ideas clearly.</p>
+      </div>
+      <div class="cgpa"><b>8.14</b><small>CGPA, third year</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li>Web development</li>
+      <li>DBMS</li>
+      <li>Problem solving</li>
+      <li>Communication</li>
+      <li>Leadership</li>
+      <li class="learning">Learning: DSA</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <h2>Projects</h2>
+    <div class="projects">
+      <article class="project">
+        <h3>Hotel management system</h3>
+        <p>An application to manage hotel operations such as rooms, guests, and bookings, backed by a structured database.</p>
+        <span>Web development, DBMS</span>
+      </article>
+      <article class="project">
+        <h3>Smart to-do list</h3>
+        <p>A task manager that helps you add, organize, and track what you need to get done.</p>
+        <span>Web development</span>
+      </article>
+      <article class="project">
+        <h3>Coffee cafe website</h3>
+        <p>A website for a coffee cafe that presents the brand and its offerings to visitors.</p>
+        <span>Web development</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <h2>Let's connect</h2>
+    <p>My code and project work live on GitHub. Take a look, or reach out there.</p>
+    <a class="btn primary" href="https://github.com/nikhilchaudhari976" target="_blank" rel="noopener">github.com/nikhilchaudhari976</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">Nikhil Chaudhari</div>
+</footer>
+</body>
+</html>
